@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="icon" href="../imagenes/file.ico">
+</head>
+<body>
+<form action=/inscripcion.php method="get">
+    <h1>Pon tu nombre</h1>
+    <fieldset>
+        <legend>Datos:</legend>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="David" required minlength="4" maxlength="8"><br><br>
+        <label for="apellidos">Apellidos: </label>
+        <input type="apellidos" name="apellidos" id="apellidos"><br><br>
+        <label for="mail">Email: </label>
+        <input type="mail" name="mail" id="mail">
+        </fieldset>
+    <h1>Donde trabajas</h1>
+        <label for="trabajo">Selecciona tu empleo:</label>
+        <select name="trabajo" id="trabajo">
+        <option value="tecnico">Técnico</option>
+        <option value="ingeniero">Ingeniero</option>
+        <option value="informatico">Informatico</option>
+        </select>
+    <h1>Elige cual es tu campo de trabajo:</h1>
+        <input type="checkbox" id="streaming" name="streaming">
+        <label for="streaming">Streaming</label>
+        <input type="checkbox" id="video" name="video">
+        <label for="video">Video Profesional</label>
+    <h1>Explica tu opinion sobre NDI</h1>
+        <textarea name="opinion" rows="10" cols="30"></textarea> 
+        <br><br>
+        <input type="submit" value="Enviar">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
